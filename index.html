@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="Welcome to my personal developer portfolio.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <br>
+        <button id="themeButton">Toggle dark mode</button>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I am a developer learning full-stack web development.</p>
+            <p>This portfolio will showcase my skills, projects, and progress.</p>
+
+            <!-- JavaScript code to display a welcome message when the button is clicked -->
+            <button id="welcomeButton">Discover More</button>
+            <p id="welcomeMessage"></p>
+
+            <button id="toggleMessageButton" hidden>Show less</button>
+            
+
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <!--    First Project    -->
+            <article class="project-card">
+
+                <h3>My Portfolio Website</h3>
+                <p>
+                    A personal website showcasing my skills,
+                    projects, and contact information.
+                </p>
+
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                
+                <p>
+                    <a href="https://github.com/samkelodlamini" target="_blank">
+                        View Source Code
+                    </a>
+                </p>
+
+
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <br>
+
+            <form id="contactForm">
+                <label for="name">YourName:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" >
+                <br>
+                <label for="email">Your Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" >
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." ></textarea>
+                <br>
+                <button type="submit">Send</button>
+            </form>
+            <p id="formFeedback" role="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mr Samkelo J Dlamini. All rights reserved.</p>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>

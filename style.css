@@ -1,0 +1,249 @@
+/* Basic Page Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;        
+}
+
+/* Body Style */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #d3d8da;
+  color: #243047;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #1d3557;
+  color: #fff;
+  padding: 24px 8%;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin: 0 0 12px;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fca311;
+}
+
+/* 4. Main content */
+main {
+  max-width: 1000px;
+  margin: 32px auto;
+  padding: 0 20px;
+} 
+
+section {
+    background-color: rgb(236, 243, 248);
+    margin-bottom: 24px;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(20, 33, 61, 0.08);
+}
+
+section h2 {
+    color: #1d3557;
+    margin-top: 0;
+    border-bottom: 2px solid #fca311;
+    padding-bottom: 8px;
+}
+
+/* 5. Skills list */
+ul {
+    padding-left: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* 6. Project card */
+article {
+    background-color: #f4f7fb;
+    padding: 18px;
+    border-left: 4px solid #fca311;
+    border-radius: 6px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+/* 7. Footer */
+footer {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* 8. Mobile-friendly layout */
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        gap: 14px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 14px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
+
+body.button {
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fca311;
+    color: #fadcdc;
+    cursor: pointer;    
+
+}
+
+
+/* Dark theme */
+body.dark-mode {
+  background-color: #121826;
+  color: #e5e7eb;
+}
+
+body.dark-mode section {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
+body.dark-mode section h2 {
+  color: #fca311;
+}
+
+body.dark-mode article {
+  background-color: #374151;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #0b1120;
+}
+
+/* Keep both buttons visually consistent */
+button {
+  background-color: #14213d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fca311;
+  color: #14213d;
+}
+
+
+/* Contact form layout */
+#contactForm {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Form labels */
+#contactForm label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Text fields and message box */
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #14213d;
+}
+
+/* Make the message box comfortable to use */
+#contactForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Highlight the field currently being used */
+#contactForm input:focus,
+#contactForm textarea:focus {
+    outline: 2px solid #fca311;
+    border-color: #fca311;
+}
+
+/* Contact form button */
+#contactForm button {
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+
+/* Contact form feedback states */
+#formFeedback {
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+#formFeedback.error {
+    color: #b91c1c;
+    background-color: #fee2e2;
+}
+
+#formFeedback.success {
+    color: #166534;
+    background-color: #dcfce7;
+}
+
+
+
+
+
